@@ -21,7 +21,6 @@ from Collatz import collatz_read, collatz_eval, collatz_print, collatz_solve
 # TestCollatz
 # -----------
 
-
 class TestCollatz (TestCase):
     # ----
     # read
