@@ -1,0 +1,7 @@
+-bash: coverage-3.5: command not found
+Name             Stmts   Miss Branch BrPart  Cover   Missing
+------------------------------------------------------------
+Collatz.py          31      0     12      0   100%
+TestCollatz.py      66      0      0      0   100%
+------------------------------------------------------------
+TOTAL               97      0     12      0   100%
