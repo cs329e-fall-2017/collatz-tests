@@ -1,0 +1,16 @@
+Acer@DESKTOP-CM1G772 MINGW64 ~/cs329e-collatz (dev)
+$ coverage run TestCollatz.py
+..............
+----------------------------------------------------------------------
+Ran 14 tests in 0.022s
+
+OK
+
+Acer@DESKTOP-CM1G772 MINGW64 ~/cs329e-collatz (dev)
+$ coverage report -m
+Name             Stmts   Miss  Cover   Missing
+----------------------------------------------
+Collatz.py          32      0   100%
+TestCollatz.py      62      0   100%
+----------------------------------------------
+TOTAL               94      0   100%
