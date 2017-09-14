@@ -32,7 +32,7 @@ class TestCollatz (TestCase):
         i, j = collatz_read(s)
         self.assertEqual(i,  1)
         self.assertEqual(j, 10)
-        
+
     def test_read_2(self):
         s = "100 200\n"
         i, j = collatz_read(s)
@@ -66,6 +66,10 @@ class TestCollatz (TestCase):
         self.assertEqual(v, 174)
 
     def test_eval_5(self):
+        v = collatz_eval(1000, 1000)
+        self.assertEqual(v, 112)
+
+    def test_eval_6(self):
         v = collatz_eval(1000, 900)
         self.assertEqual(v, 174)
 
