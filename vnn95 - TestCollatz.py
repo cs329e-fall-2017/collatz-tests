@@ -21,6 +21,7 @@ from Collatz import collatz_read, collatz_eval, collatz_print, collatz_solve
 # TestCollatz
 # -----------
 
+
 class TestCollatz (TestCase):
     # ----
     # read
@@ -122,11 +123,21 @@ class TestCollatz (TestCase):
             w.getvalue(), "1 10 20\n100 200 125\n201 210 89\n900 1000 174\n")
         
     def test_solve_2(self):
-        r = StringIO("1 10\n100 200\n201 210\n900 1000\n")
+        r = StringIO("13 17\n780 699\n99 98\n450 140\n")
         w = StringIO()
         collatz_solve(r, w)
         self.assertEqual(
-            w.getvalue(), "1 10 20\n100 200 125\n201 210 89\n900 1000 174\n")
+            w.getvalue(), "13 17 18\n780 699 171\n99 98 26\n450 140 144\n")
+        
+    def test_solve_3(self):
+        r = StringIO("13 13\n7777 7777\n1234 1\n34587 2\n")
+        w = StringIO()
+        collatz_solve(r, w)
+        self.assertEqual(
+            w.getvalue(), "13 13 10\n7777 7777 84\n1234 1 182\n34587 2 311\n")
+
+
+
 
 # ----
 # main
